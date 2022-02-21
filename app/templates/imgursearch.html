@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ImgurSearchResult</title>
+</head>
+ <style type="text/css">
+     p { font-size: 100%; font-family: Arial, Helvetica, sans-serif; color: green; }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  </style>
+<body>
+    <dl>
+        <div class="wrapper">
+        {% for elem in json_data %}
+            <img style="width: 100%" src="{{elem['cover']['url']}}"></img>
+<!--            <p>id: {{elem['id']}}</p>-->
+<!--            <p>account_id: {{elem['account_id']}}</p>-->
+<!--            <p>description: {{elem['description']}}</p>-->
+<!--            <p>view_count: {{elem['view_count']}}</p>-->
+<!--            <p>upvote_count: {{elem['upvote_count']}}</p>-->
+<!--            <p>downvote_count: {{elem['downvote_count']}}</p>-->
+<!--            <p>point_count: {{elem['point_count']}}</p>-->
+<!--            <p>image_count: {{elem['image_count']}}</p>-->
+<!--            <p>comment_count: {{elem['comment_count']}}</p>-->
+<!--            <p>favorite_count: {{elem['favorite_count']}}</p>-->
+<!--            <p>virality: {{elem['virality']}}</p>-->
+<!--            <p>score: {{elem['score']}}</p>-->
+<!--            <p>in_most_viral: {{elem['in_most_viral']}}</p>-->
+<!--            <p>is_album: {{elem['is_album']}}</p>-->
+<!--            <p>is_mature: {{elem['is_mature']}}</p>-->
+<!--            <p>cover_id: {{elem['cover_id']}}</p>-->
+<!--            <p>created_at: {{elem['created_at']}}</p>-->
+<!--            <p>updated_at: {{elem['updated_at']}}</p>-->
+<!--            <p>url: {{elem['url']}}</p>-->
+<!--            <p>privacy: {{elem['privacy']}}</p>-->
+<!--            <p>vote: {{elem['vote']}}</p>-->
+<!--            <p>favorite: {{elem['favorite']}}</p>-->
+<!--            <p>is_ad: {{elem['is_ad']}}</p>-->
+<!--            <p>ad_type: {{elem['ad_type']}}</p>-->
+<!--            <p>ad_url: {{elem['ad_url']}}</p>-->
+<!--            <p>include_album_ads: {{elem['include_album_ads']}}</p>-->
+<!--            <p>shared_with_community: {{elem['shared_with_community']}}</p>-->
+<!--            <p>is_pending: {{elem['is_pending']}}</p>-->
+<!--            <p>platform: {{elem['platform']}}</p>-->
+<!--            <p>ad_config: {{elem['ad_config']}}</p>-->
+<!--            <p>account: {{elem['account']}}</p>-->
+<!--            <p>cover: {{elem['cover']}}</p>-->
+<!--            <p>media: {{elem['media']}}</p>-->
+<!--            <p>display: {{elem['display']}}</p>-->
+        {% endfor %}
+        </div>
+    </dl>
+</body>
+</html>
