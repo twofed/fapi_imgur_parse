@@ -10,10 +10,6 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 defpage = 'https://imgur.com'
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
 @app.get("/imgur/html/{searchword}", response_class=HTMLResponse)
 async def get_imgur_html(request: Request, searchword: str):
     json_data = searchimgur(searchword)
